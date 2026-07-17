@@ -26,7 +26,7 @@ function AdminRoute({ children }) {
 
 function App() {
   return (
-    <GoogleOAuthProvider clientId="874229958487-1o5a99ijvvvniqhqfohdq27oceqlq0u9.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
       <div className="min-h-screen w-full bg-[#FFFFFF] overflow-x-hidden">  
         <Toaster position='top-right'/>
         <Routes>
